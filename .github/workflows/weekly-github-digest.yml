@@ -11,6 +11,11 @@ permissions:
 jobs:
   build-digest:
     runs-on: ubuntu-latest
+    env:
+      GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      GMAIL_TO: ${{ secrets.GMAIL_TO }}
+      GMAIL_SUBJECT_PREFIX: GitHub 每周热门项目速览
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -34,12 +39,7 @@ jobs:
             --json-output output/weekly-github-digest.json
 
       - name: Email digest to Gmail
-        if: ${{ secrets.GMAIL_SMTP_USER != '' && secrets.GMAIL_APP_PASSWORD != '' }}
-        env:
-          GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          GMAIL_TO: ${{ secrets.GMAIL_TO }}
-          GMAIL_SUBJECT_PREFIX: GitHub 每周热门项目速览
+        if: ${{ env.GMAIL_SMTP_USER != '' && env.GMAIL_APP_PASSWORD != '' }}
         run: |
           python scripts/send_gmail_digest.py \
             --markdown output/weekly-github-digest.md \
