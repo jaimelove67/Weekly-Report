@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-05-02T11:20:49+00:00",
+  "generated_on": "2026-05-02T11:30:25+00:00",
   "days": 7,
   "top": 10,
   "min_stars": 150,
@@ -9,7 +9,7 @@
       "url": "https://github.com/nexu-io/open-design",
       "description": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
       "language": "TypeScript",
-      "stars": 13595,
+      "stars": 13609,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -33,12 +33,12 @@
         "vibe-coding"
       ],
       "created_at": "2026-04-28T04:25:20Z",
-      "updated_at": "2026-05-02T11:20:20Z",
+      "updated_at": "2026-05-02T11:29:12Z",
       "summary": "这是一个围绕“Local-first, open-source alternative to Anthropic's Claude Design. 19 Skills · 71 brand-grade Design Systems Generate web · desktop · mobile”展开的开源项目。 README 重点：Open Design",
       "highlights": [
         "关键词：agent-skills / ai-agents / ai-design",
         "主要语言：TypeScript",
-        "当前星标：13595"
+        "当前星标：13609"
       ]
     },
     {
@@ -46,14 +46,14 @@
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中",
       "language": "Unknown",
-      "stars": 3180,
+      "stars": 3182,
       "topics": [],
       "created_at": "2026-04-25T09:19:13Z",
-      "updated_at": "2026-05-02T11:13:53Z",
+      "updated_at": "2026-05-02T11:25:03Z",
       "summary": "这是一个围绕“Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中”展开的开源项目。",
       "highlights": [
         "主要语言：Unknown",
-        "当前星标：3180"
+        "当前星标：3182"
       ]
     },
     {
@@ -61,14 +61,14 @@
       "url": "https://github.com/cursor/cookbook",
       "description": "",
       "language": "TypeScript",
-      "stars": 3042,
+      "stars": 3043,
       "topics": [],
       "created_at": "2026-04-27T08:27:12Z",
-      "updated_at": "2026-05-02T11:17:47Z",
+      "updated_at": "2026-05-02T11:28:00Z",
       "summary": "这是一个近期升温很快的开源项目，README 重点提到：Cursor Cookbook",
       "highlights": [
         "主要语言：TypeScript",
-        "当前星标：3042"
+        "当前星标：3043"
       ]
     },
     {
@@ -76,14 +76,14 @@
       "url": "https://github.com/theori-io/copy-fail-CVE-2026-31431",
       "description": "",
       "language": "Python",
-      "stars": 2787,
+      "stars": 2788,
       "topics": [],
       "created_at": "2026-04-29T12:15:28Z",
-      "updated_at": "2026-05-02T11:16:46Z",
+      "updated_at": "2026-05-02T11:25:24Z",
       "summary": "这是一个近期升温很快的开源项目，README 重点提到：Copy Fail - CVE-2026-31431",
       "highlights": [
         "主要语言：Python",
-        "当前星标：2787"
+        "当前星标：2788"
       ]
     },
     {
@@ -91,14 +91,14 @@
       "url": "https://github.com/denuitt1/mhr-cfw",
       "description": "A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.",
       "language": "Python",
-      "stars": 1475,
+      "stars": 1479,
       "topics": [],
       "created_at": "2026-04-27T22:26:16Z",
-      "updated_at": "2026-05-02T11:19:56Z",
+      "updated_at": "2026-05-02T11:29:05Z",
       "summary": "这是一个围绕“A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.”展开的开源项目。 README 重点：MHR-CFW - MasterHttpRelay + Cloudflare Worker",
       "highlights": [
         "主要语言：Python",
-        "当前星标：1475"
+        "当前星标：1479"
       ]
     },
     {
@@ -106,14 +106,14 @@
       "url": "https://github.com/willchen96/mike",
       "description": "OSS AI Legal Platform",
       "language": "TypeScript",
-      "stars": 1217,
+      "stars": 1222,
       "topics": [],
       "created_at": "2026-04-29T17:41:12Z",
-      "updated_at": "2026-05-02T11:20:28Z",
+      "updated_at": "2026-05-02T11:30:10Z",
       "summary": "这是一个围绕“OSS AI Legal Platform”展开的开源项目。",
       "highlights": [
         "主要语言：TypeScript",
-        "当前星标：1217"
+        "当前星标：1222"
       ]
     },
     {
@@ -121,7 +121,7 @@
       "url": "https://github.com/darrylmorley/whatcable",
       "description": "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
       "language": "Swift",
-      "stars": 1064,
+      "stars": 1068,
       "topics": [
         "apple-silicon",
         "hardware-info",
@@ -138,12 +138,12 @@
         "utility"
       ],
       "created_at": "2026-05-01T07:45:10Z",
-      "updated_at": "2026-05-02T11:20:42Z",
+      "updated_at": "2026-05-02T11:28:14Z",
       "summary": "这是一个围绕“macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do”展开的开源项目。",
       "highlights": [
         "关键词：apple-silicon / hardware-info / iokit",
         "主要语言：Swift",
-        "当前星标：1064"
+        "当前星标：1068"
       ]
     },
     {
