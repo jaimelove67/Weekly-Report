@@ -1,0 +1,54 @@
+name: Weekly GitHub Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  build-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Generate weekly digest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1-mini
+        run: |
+          python scripts/weekly_github_digest.py \
+            --days 7 \
+            --top 10 \
+            --min-stars 150 \
+            --output output/weekly-github-digest.md \
+            --json-output output/weekly-github-digest.json
+
+      - name: Email digest to Gmail
+        if: ${{ secrets.GMAIL_SMTP_USER != '' && secrets.GMAIL_APP_PASSWORD != '' }}
+        env:
+          GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_TO: ${{ secrets.GMAIL_TO }}
+          GMAIL_SUBJECT_PREFIX: GitHub 每周热门项目速览
+        run: |
+          python scripts/send_gmail_digest.py \
+            --markdown output/weekly-github-digest.md \
+            --json output/weekly-github-digest.json
+
+      - name: Commit digest if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/weekly-github-digest.md output/weekly-github-digest.json
+          git diff --cached --quiet || git commit -m "Update weekly GitHub digest"
+          git push

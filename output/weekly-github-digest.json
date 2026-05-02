@@ -1,0 +1,209 @@
+{
+  "generated_on": "2026-05-02T09:53:41+00:00",
+  "days": 7,
+  "top": 10,
+  "min_stars": 150,
+  "projects": [
+    {
+      "name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "description": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
+      "language": "TypeScript",
+      "stars": 13288,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-design",
+        "byok",
+        "claude",
+        "claude-code-for-design",
+        "claude-design",
+        "coding-agents",
+        "design-systems",
+        "design-tools",
+        "desktop-app",
+        "figma-alternative",
+        "generative-ai",
+        "hermes-agent",
+        "local-first",
+        "nextjs",
+        "no-code",
+        "prototyping",
+        "ui-generator",
+        "vibe-coding"
+      ],
+      "created_at": "2026-04-28T04:25:20Z",
+      "updated_at": "2026-05-02T09:52:43Z",
+      "summary": "这是一个围绕“Local-first, open-source alternative to Anthropic's Claude Design. 19 Skills · 71 brand-grade Design Systems Generate web · desktop · mobile”展开的开源项目。 README 重点：Open Design",
+      "highlights": [
+        "关键词：agent-skills / ai-agents / ai-design",
+        "主要语言：TypeScript",
+        "当前星标：13288"
+      ]
+    },
+    {
+      "name": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中",
+      "language": "Unknown",
+      "stars": 3162,
+      "topics": [],
+      "created_at": "2026-04-25T09:19:13Z",
+      "updated_at": "2026-05-02T09:52:18Z",
+      "summary": "这是一个围绕“Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中”展开的开源项目。",
+      "highlights": [
+        "主要语言：Unknown",
+        "当前星标：3162"
+      ]
+    },
+    {
+      "name": "cursor/cookbook",
+      "url": "https://github.com/cursor/cookbook",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 3023,
+      "topics": [],
+      "created_at": "2026-04-27T08:27:12Z",
+      "updated_at": "2026-05-02T09:46:22Z",
+      "summary": "这是一个近期升温很快的开源项目，README 重点提到：Cursor Cookbook",
+      "highlights": [
+        "主要语言：TypeScript",
+        "当前星标：3023"
+      ]
+    },
+    {
+      "name": "theori-io/copy-fail-CVE-2026-31431",
+      "url": "https://github.com/theori-io/copy-fail-CVE-2026-31431",
+      "description": "",
+      "language": "Python",
+      "stars": 2737,
+      "topics": [],
+      "created_at": "2026-04-29T12:15:28Z",
+      "updated_at": "2026-05-02T09:52:27Z",
+      "summary": "这是一个近期升温很快的开源项目，README 重点提到：Copy Fail - CVE-2026-31431",
+      "highlights": [
+        "主要语言：Python",
+        "当前星标：2737"
+      ]
+    },
+    {
+      "name": "denuitt1/mhr-cfw",
+      "url": "https://github.com/denuitt1/mhr-cfw",
+      "description": "A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.",
+      "language": "Python",
+      "stars": 1441,
+      "topics": [],
+      "created_at": "2026-04-27T22:26:16Z",
+      "updated_at": "2026-05-02T09:51:01Z",
+      "summary": "这是一个围绕“A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.”展开的开源项目。 README 重点：MHR-CFW - MasterHttpRelay + Cloudflare Worker",
+      "highlights": [
+        "主要语言：Python",
+        "当前星标：1441"
+      ]
+    },
+    {
+      "name": "willchen96/mike",
+      "url": "https://github.com/willchen96/mike",
+      "description": "OSS AI Legal Platform",
+      "language": "TypeScript",
+      "stars": 1200,
+      "topics": [],
+      "created_at": "2026-04-29T17:41:12Z",
+      "updated_at": "2026-05-02T09:52:10Z",
+      "summary": "这是一个围绕“OSS AI Legal Platform”展开的开源项目。",
+      "highlights": [
+        "主要语言：TypeScript",
+        "当前星标：1200"
+      ]
+    },
+    {
+      "name": "darrylmorley/whatcable",
+      "url": "https://github.com/darrylmorley/whatcable",
+      "description": "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
+      "language": "Swift",
+      "stars": 1025,
+      "topics": [
+        "apple-silicon",
+        "hardware-info",
+        "iokit",
+        "mac-app",
+        "macos",
+        "menubar",
+        "menubar-app",
+        "swift",
+        "swiftui",
+        "thunderbolt",
+        "usb-c",
+        "usb-power-delivery",
+        "utility"
+      ],
+      "created_at": "2026-05-01T07:45:10Z",
+      "updated_at": "2026-05-02T09:51:57Z",
+      "summary": "这是一个围绕“macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do”展开的开源项目。",
+      "highlights": [
+        "关键词：apple-silicon / hardware-info / iokit",
+        "主要语言：Swift",
+        "当前星标：1025"
+      ]
+    },
+    {
+      "name": "DanOps-1/Gpt-Agreement-Payment",
+      "url": "https://github.com/DanOps-1/Gpt-Agreement-Payment",
+      "description": "ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription with from-scratch hCaptcha solver and empirical anti-fraud research",
+      "language": "Python",
+      "stars": 894,
+      "topics": [
+        "adversarial-ml",
+        "anti-fraud",
+        "bug-bounty",
+        "captcha-solver",
+        "chatgpt",
+        "ctf-tools",
+        "hcaptcha-solver",
+        "mitmproxy",
+        "playwright",
+        "protocol-replay",
+        "stripe",
+        "vlm"
+      ],
+      "created_at": "2026-04-27T03:48:28Z",
+      "updated_at": "2026-05-02T09:20:22Z",
+      "summary": "这是一个围绕“ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription ”展开的开源项目。",
+      "highlights": [
+        "关键词：adversarial-ml / anti-fraud / bug-bounty",
+        "主要语言：Python",
+        "当前星标：894"
+      ]
+    },
+    {
+      "name": "b-nnett/codex-plusplus",
+      "url": "https://github.com/b-nnett/codex-plusplus",
+      "description": "Codex++ tweak system for the Codex desktop app",
+      "language": "TypeScript",
+      "stars": 802,
+      "topics": [],
+      "created_at": "2026-04-28T10:35:16Z",
+      "updated_at": "2026-05-02T09:49:09Z",
+      "summary": "这是一个围绕“Codex++ tweak system for the Codex desktop app”展开的开源项目。",
+      "highlights": [
+        "主要语言：TypeScript",
+        "当前星标：802"
+      ]
+    },
+    {
+      "name": "GENEXIS-AI/chromex",
+      "url": "https://github.com/GENEXIS-AI/chromex",
+      "description": "A Codex-powered Chrome side-panel assistant for page context, tabs, voice, and image workflows.",
+      "language": "TypeScript",
+      "stars": 745,
+      "topics": [],
+      "created_at": "2026-04-28T11:08:06Z",
+      "updated_at": "2026-05-02T09:14:15Z",
+      "summary": "这是一个围绕“A Codex-powered Chrome side-panel assistant for page context, tabs, voice, and image workflows.”展开的开源项目。",
+      "highlights": [
+        "主要语言：TypeScript",
+        "当前星标：745"
+      ]
+    }
+  ]
+}
