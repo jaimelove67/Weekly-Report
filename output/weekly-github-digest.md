@@ -6,68 +6,68 @@
 
 ## 1. [nexu-io/open-design](https://github.com/nexu-io/open-design)
 
-- 星标：13574
+- 星标：13595
 - 主要语言：TypeScript
 - 主题：agent-skills, ai-agents, ai-design, byok, claude
 - 精炼说明：这是一个围绕“Local-first, open-source alternative to Anthropic's Claude Design. 19 Skills · 71 brand-grade Design Systems Generate web · desktop · mobile”展开的开源项目。 README 重点：Open Design
 - 关键词：agent-skills / ai-agents / ai-design
 - 主要语言：TypeScript
-- 当前星标：13574
+- 当前星标：13595
 
 ## 2. [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2)
 
-- 星标：3179
+- 星标：3180
 - 主要语言：Unknown
 - 主题：无
 - 精炼说明：这是一个围绕“Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中”展开的开源项目。
 - 主要语言：Unknown
-- 当前星标：3179
+- 当前星标：3180
 
 ## 3. [cursor/cookbook](https://github.com/cursor/cookbook)
 
-- 星标：3039
+- 星标：3042
 - 主要语言：TypeScript
 - 主题：无
 - 精炼说明：这是一个近期升温很快的开源项目，README 重点提到：Cursor Cookbook
 - 主要语言：TypeScript
-- 当前星标：3039
+- 当前星标：3042
 
 ## 4. [theori-io/copy-fail-CVE-2026-31431](https://github.com/theori-io/copy-fail-CVE-2026-31431)
 
-- 星标：2784
+- 星标：2787
 - 主要语言：Python
 - 主题：无
 - 精炼说明：这是一个近期升温很快的开源项目，README 重点提到：Copy Fail - CVE-2026-31431
 - 主要语言：Python
-- 当前星标：2784
+- 当前星标：2787
 
 ## 5. [denuitt1/mhr-cfw](https://github.com/denuitt1/mhr-cfw)
 
-- 星标：1472
+- 星标：1475
 - 主要语言：Python
 - 主题：无
 - 精炼说明：这是一个围绕“A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.”展开的开源项目。 README 重点：MHR-CFW - MasterHttpRelay + Cloudflare Worker
 - 主要语言：Python
-- 当前星标：1472
+- 当前星标：1475
 
 ## 6. [willchen96/mike](https://github.com/willchen96/mike)
 
-- 星标：1214
+- 星标：1217
 - 主要语言：TypeScript
 - 主题：无
 - 精炼说明：这是一个围绕“OSS AI Legal Platform”展开的开源项目。
 - 主要语言：TypeScript
-- 当前星标：1214
+- 当前星标：1217
 
 ## 7. [darrylmorley/whatcable](https://github.com/darrylmorley/whatcable)
 
-- 星标：1062
+- 星标：1064
 - 主要语言：Swift
 - 主题：apple-silicon, hardware-info, iokit, mac-app, macos
 - 精炼说明：这是一个围绕“macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do”展开的开源项目。
 - 关键词：apple-silicon / hardware-info / iokit
 - 主要语言：Swift
-- 当前星标：1062
+- 当前星标：1064
 
 ## 8. [DanOps-1/Gpt-Agreement-Payment](https://github.com/DanOps-1/Gpt-Agreement-Payment)
 
@@ -90,9 +90,9 @@
 
 ## 10. [GENEXIS-AI/chromex](https://github.com/GENEXIS-AI/chromex)
 
-- 星标：745
+- 星标：746
 - 主要语言：TypeScript
 - 主题：无
 - 精炼说明：这是一个围绕“A Codex-powered Chrome side-panel assistant for page context, tabs, voice, and image workflows.”展开的开源项目。
 - 主要语言：TypeScript
-- 当前星标：745
+- 当前星标：746
