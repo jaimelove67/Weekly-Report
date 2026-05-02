@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-05-02T11:06:27+00:00",
+  "generated_on": "2026-05-02T11:12:48+00:00",
   "days": 7,
   "top": 10,
   "min_stars": 150,
@@ -9,7 +9,7 @@
       "url": "https://github.com/nexu-io/open-design",
       "description": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
       "language": "TypeScript",
-      "stars": 13552,
+      "stars": 13574,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -33,12 +33,12 @@
         "vibe-coding"
       ],
       "created_at": "2026-04-28T04:25:20Z",
-      "updated_at": "2026-05-02T11:06:09Z",
+      "updated_at": "2026-05-02T11:12:45Z",
       "summary": "这是一个围绕“Local-first, open-source alternative to Anthropic's Claude Design. 19 Skills · 71 brand-grade Design Systems Generate web · desktop · mobile”展开的开源项目。 README 重点：Open Design",
       "highlights": [
         "关键词：agent-skills / ai-agents / ai-design",
         "主要语言：TypeScript",
-        "当前星标：13552"
+        "当前星标：13574"
       ]
     },
     {
@@ -46,14 +46,14 @@
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
       "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中",
       "language": "Unknown",
-      "stars": 3177,
+      "stars": 3179,
       "topics": [],
       "created_at": "2026-04-25T09:19:13Z",
-      "updated_at": "2026-05-02T11:01:59Z",
+      "updated_at": "2026-05-02T11:09:59Z",
       "summary": "这是一个围绕“Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中”展开的开源项目。",
       "highlights": [
         "主要语言：Unknown",
-        "当前星标：3177"
+        "当前星标：3179"
       ]
     },
     {
@@ -61,14 +61,14 @@
       "url": "https://github.com/cursor/cookbook",
       "description": "",
       "language": "TypeScript",
-      "stars": 3037,
+      "stars": 3039,
       "topics": [],
       "created_at": "2026-04-27T08:27:12Z",
-      "updated_at": "2026-05-02T11:04:51Z",
+      "updated_at": "2026-05-02T11:12:29Z",
       "summary": "这是一个近期升温很快的开源项目，README 重点提到：Cursor Cookbook",
       "highlights": [
         "主要语言：TypeScript",
-        "当前星标：3037"
+        "当前星标：3039"
       ]
     },
     {
@@ -76,14 +76,14 @@
       "url": "https://github.com/theori-io/copy-fail-CVE-2026-31431",
       "description": "",
       "language": "Python",
-      "stars": 2782,
+      "stars": 2784,
       "topics": [],
       "created_at": "2026-04-29T12:15:28Z",
-      "updated_at": "2026-05-02T11:03:09Z",
+      "updated_at": "2026-05-02T11:10:35Z",
       "summary": "这是一个近期升温很快的开源项目，README 重点提到：Copy Fail - CVE-2026-31431",
       "highlights": [
         "主要语言：Python",
-        "当前星标：2782"
+        "当前星标：2784"
       ]
     },
     {
@@ -91,14 +91,14 @@
       "url": "https://github.com/denuitt1/mhr-cfw",
       "description": "A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.",
       "language": "Python",
-      "stars": 1470,
+      "stars": 1472,
       "topics": [],
       "created_at": "2026-04-27T22:26:16Z",
-      "updated_at": "2026-05-02T11:05:16Z",
+      "updated_at": "2026-05-02T11:10:27Z",
       "summary": "这是一个围绕“A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.”展开的开源项目。 README 重点：MHR-CFW - MasterHttpRelay + Cloudflare Worker",
       "highlights": [
         "主要语言：Python",
-        "当前星标：1470"
+        "当前星标：1472"
       ]
     },
     {
@@ -121,7 +121,7 @@
       "url": "https://github.com/darrylmorley/whatcable",
       "description": "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
       "language": "Swift",
-      "stars": 1059,
+      "stars": 1062,
       "topics": [
         "apple-silicon",
         "hardware-info",
@@ -138,12 +138,12 @@
         "utility"
       ],
       "created_at": "2026-05-01T07:45:10Z",
-      "updated_at": "2026-05-02T11:06:06Z",
+      "updated_at": "2026-05-02T11:09:50Z",
       "summary": "这是一个围绕“macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do”展开的开源项目。",
       "highlights": [
         "关键词：apple-silicon / hardware-info / iokit",
         "主要语言：Swift",
-        "当前星标：1059"
+        "当前星标：1062"
       ]
     },
     {
