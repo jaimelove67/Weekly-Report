@@ -1,7 +1,7 @@
 {
-  "generated_on": "2026-05-02T11:30:25+00:00",
+  "generated_on": "2026-05-03T06:02:18+00:00",
   "days": 7,
-  "top": 10,
+  "top": 8,
   "min_stars": 150,
   "projects": [
     {
@@ -9,7 +9,7 @@
       "url": "https://github.com/nexu-io/open-design",
       "description": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
       "language": "TypeScript",
-      "stars": 13609,
+      "stars": 16743,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -33,27 +33,20 @@
         "vibe-coding"
       ],
       "created_at": "2026-04-28T04:25:20Z",
-      "updated_at": "2026-05-02T11:29:12Z",
-      "summary": "这是一个围绕“Local-first, open-source alternative to Anthropic's Claude Design. 19 Skills · 71 brand-grade Design Systems Generate web · desktop · mobile”展开的开源项目。 README 重点：Open Design",
-      "highlights": [
-        "关键词：agent-skills / ai-agents / ai-design",
-        "主要语言：TypeScript",
-        "当前星标：13609"
-      ]
-    },
-    {
-      "name": "freestylefly/awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中",
-      "language": "Unknown",
-      "stars": 3182,
-      "topics": [],
-      "created_at": "2026-04-25T09:19:13Z",
-      "updated_at": "2026-05-02T11:25:03Z",
-      "summary": "这是一个围绕“Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中”展开的开源项目。",
-      "highlights": [
-        "主要语言：Unknown",
-        "当前星标：3182"
+      "updated_at": "2026-05-03T06:02:01Z",
+      "headline": "这是一个面向 AI 设计工作的开源替代品，目标是替代闭源设计代理工具。",
+      "use_case": "如果你想自己部署 AI 设计流程、切换模型或接入团队现有设计系统，它提供了一条开源方案。",
+      "implementation": "项目把本地优先的设计代理、现成设计系统和多种导出能力整合成一套工作流。",
+      "audience": "适合设计工具 PM、前端团队、做 AI 创作流程的人快速评估可替代性。",
+      "term_notes": [
+        {
+          "term": "BYOK",
+          "note": "自带 API Key（Bring Your Own Key）"
+        },
+        {
+          "term": "local-first",
+          "note": "本地优先，核心数据和工作流优先在本机完成"
+        }
       ]
     },
     {
@@ -61,29 +54,34 @@
       "url": "https://github.com/cursor/cookbook",
       "description": "",
       "language": "TypeScript",
-      "stars": 3043,
+      "stars": 3163,
       "topics": [],
       "created_at": "2026-04-27T08:27:12Z",
-      "updated_at": "2026-05-02T11:28:00Z",
-      "summary": "这是一个近期升温很快的开源项目，README 重点提到：Cursor Cookbook",
-      "highlights": [
-        "主要语言：TypeScript",
-        "当前星标：3043"
-      ]
+      "updated_at": "2026-05-03T05:55:11Z",
+      "headline": "这是一套围绕 Cursor SDK 的示例库，用来展示 Cursor 能怎么接进真实应用。",
+      "use_case": "如果你在评估 Cursor SDK 是否值得接入自己的产品，这个仓库能帮你快速扫清上手成本。",
+      "implementation": "仓库用一批最小示例演示 SDK 调用方式、代理接入方法和典型集成场景。",
+      "audience": "适合工具 PM、平台工程师和要做 AI 编码集成的开发者。",
+      "term_notes": []
     },
     {
       "name": "theori-io/copy-fail-CVE-2026-31431",
       "url": "https://github.com/theori-io/copy-fail-CVE-2026-31431",
       "description": "",
       "language": "Python",
-      "stars": 2788,
+      "stars": 2936,
       "topics": [],
       "created_at": "2026-04-29T12:15:28Z",
-      "updated_at": "2026-05-02T11:25:24Z",
-      "summary": "这是一个近期升温很快的开源项目，README 重点提到：Copy Fail - CVE-2026-31431",
-      "highlights": [
-        "主要语言：Python",
-        "当前星标：2788"
+      "updated_at": "2026-05-03T05:55:11Z",
+      "headline": "这是一个围绕 CVE-2026-31431 漏洞做复现和分析的安全项目。",
+      "use_case": "如果你要快速理解 CVE-2026-31431 的影响和复现路径，这个仓库相当于一份可操作实验材料。",
+      "implementation": "它把漏洞编号、复现目标和实验线索集中整理，方便直接搭环境验证。",
+      "audience": "适合安全研究员、漏洞分析人员和想快速跟进漏洞细节的开发者。",
+      "term_notes": [
+        {
+          "term": "CVE",
+          "note": "公开披露的安全漏洞编号"
+        }
       ]
     },
     {
@@ -91,14 +89,27 @@
       "url": "https://github.com/denuitt1/mhr-cfw",
       "description": "A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.",
       "language": "Python",
-      "stars": 1479,
+      "stars": 1720,
       "topics": [],
       "created_at": "2026-04-27T22:26:16Z",
-      "updated_at": "2026-05-02T11:29:05Z",
-      "summary": "这是一个围绕“A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.”展开的开源项目。 README 重点：MHR-CFW - MasterHttpRelay + Cloudflare Worker",
-      "highlights": [
-        "主要语言：Python",
-        "当前星标：1479"
+      "updated_at": "2026-05-03T05:58:39Z",
+      "headline": "这是一个网络流量中继方案，前端走 GAS，后端转发到 Cloudflare Workers。",
+      "use_case": "如果你在研究受限网络下的链路可达性或流量绕行方案，这个仓库能提供一条现成实验路径。",
+      "implementation": "项目把 GAS、域名前置和 Cloudflare Workers 串成可复用的转发链路。",
+      "audience": "适合安全研究、网络工程和做连接策略验证的开发者。",
+      "term_notes": [
+        {
+          "term": "Cloudflare Workers",
+          "note": "Cloudflare 的边缘函数运行环境"
+        },
+        {
+          "term": "DPI",
+          "note": "深度包检测（Deep Packet Inspection）"
+        },
+        {
+          "term": "domain fronting",
+          "note": "域名前置，用允许访问的域名做流量转发"
+        }
       ]
     },
     {
@@ -106,14 +117,19 @@
       "url": "https://github.com/willchen96/mike",
       "description": "OSS AI Legal Platform",
       "language": "TypeScript",
-      "stars": 1222,
+      "stars": 1453,
       "topics": [],
       "created_at": "2026-04-29T17:41:12Z",
-      "updated_at": "2026-05-02T11:30:10Z",
-      "summary": "这是一个围绕“OSS AI Legal Platform”展开的开源项目。",
-      "highlights": [
-        "主要语言：TypeScript",
-        "当前星标：1222"
+      "updated_at": "2026-05-03T05:41:39Z",
+      "headline": "这是一个开源 AI 法律工作平台，想把检索、问答和文档处理放进同一个产品里。",
+      "use_case": "如果你在看垂直行业 AI 产品，这个仓库能帮助判断法律场景里的产品形态应该怎么落地。",
+      "implementation": "项目采用前后端分层方式，把法律文档处理、检索和 AI 交互能力组合成完整应用。",
+      "audience": "适合法律科技 PM、做企业知识库的人，以及关心垂直场景 AI 落地的开发者。",
+      "term_notes": [
+        {
+          "term": "RAG",
+          "note": "检索增强生成（Retrieval-Augmented Generation）"
+        }
       ]
     },
     {
@@ -121,7 +137,7 @@
       "url": "https://github.com/darrylmorley/whatcable",
       "description": "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do",
       "language": "Swift",
-      "stars": 1068,
+      "stars": 1291,
       "topics": [
         "apple-silicon",
         "hardware-info",
@@ -138,20 +154,19 @@
         "utility"
       ],
       "created_at": "2026-05-01T07:45:10Z",
-      "updated_at": "2026-05-02T11:28:14Z",
-      "summary": "这是一个围绕“macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do”展开的开源项目。",
-      "highlights": [
-        "关键词：apple-silicon / hardware-info / iokit",
-        "主要语言：Swift",
-        "当前星标：1068"
-      ]
+      "updated_at": "2026-05-03T05:43:39Z",
+      "headline": "这是一个 macOS 菜单栏工具，用来识别每根 USB-C 线到底支持哪些能力。",
+      "use_case": "如果你经常分不清 USB-C 线能不能跑高速传输、视频输出或快充，这个工具就是直接答案。",
+      "implementation": "工具读取系统层硬件信息，再把复杂参数翻译成普通用户能看懂的结果。",
+      "audience": "适合做消费级工具的 PM，也适合 Mac 重度用户和硬件开发者参考交互方式。",
+      "term_notes": []
     },
     {
       "name": "DanOps-1/Gpt-Agreement-Payment",
       "url": "https://github.com/DanOps-1/Gpt-Agreement-Payment",
       "description": "ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription with from-scratch hCaptcha solver and empirical anti-fraud research",
       "language": "Python",
-      "stars": 895,
+      "stars": 921,
       "topics": [
         "adversarial-ml",
         "anti-fraud",
@@ -167,12 +182,24 @@
         "vlm"
       ],
       "created_at": "2026-04-27T03:48:28Z",
-      "updated_at": "2026-05-02T10:16:10Z",
-      "summary": "这是一个围绕“ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription ”展开的开源项目。",
-      "highlights": [
-        "关键词：adversarial-ml / anti-fraud / bug-bounty",
-        "主要语言：Python",
-        "当前星标：895"
+      "updated_at": "2026-05-03T03:53:37Z",
+      "headline": "这是一个围绕订阅协议重放、验证码处理和反欺诈研究的实验工具集。",
+      "use_case": "如果你关注订阅链路里的协议细节、验证码环节和反欺诈对抗，这个仓库是现成研究入口。",
+      "implementation": "项目把协议重放、验证码求解和实证研究数据整理到一套实验材料里。",
+      "audience": "适合安全研究、增长风控和做支付/订阅链路分析的技术人员。",
+      "term_notes": [
+        {
+          "term": "end-to-end",
+          "note": "端到端，覆盖完整流程"
+        },
+        {
+          "term": "hCaptcha",
+          "note": "一种验证码服务"
+        },
+        {
+          "term": "protocol replay",
+          "note": "协议重放，按真实接口流程复现请求"
+        }
       ]
     },
     {
@@ -180,30 +207,15 @@
       "url": "https://github.com/b-nnett/codex-plusplus",
       "description": "Codex++ tweak system for the Codex desktop app",
       "language": "TypeScript",
-      "stars": 802,
+      "stars": 839,
       "topics": [],
       "created_at": "2026-04-28T10:35:16Z",
-      "updated_at": "2026-05-02T09:49:09Z",
-      "summary": "这是一个围绕“Codex++ tweak system for the Codex desktop app”展开的开源项目。",
-      "highlights": [
-        "主要语言：TypeScript",
-        "当前星标：802"
-      ]
-    },
-    {
-      "name": "GENEXIS-AI/chromex",
-      "url": "https://github.com/GENEXIS-AI/chromex",
-      "description": "A Codex-powered Chrome side-panel assistant for page context, tabs, voice, and image workflows.",
-      "language": "TypeScript",
-      "stars": 746,
-      "topics": [],
-      "created_at": "2026-04-28T11:08:06Z",
-      "updated_at": "2026-05-02T11:20:04Z",
-      "summary": "这是一个围绕“A Codex-powered Chrome side-panel assistant for page context, tabs, voice, and image workflows.”展开的开源项目。",
-      "highlights": [
-        "主要语言：TypeScript",
-        "当前星标：746"
-      ]
+      "updated_at": "2026-05-03T05:54:55Z",
+      "headline": "这是一个给 Codex 桌面版做功能增强和界面修补的扩展系统。",
+      "use_case": "如果你把代理型 IDE 当主力工具，这个项目展示了怎样在不重造产品的前提下补齐缺口。",
+      "implementation": "项目通过注入自定义增强模块，为现有桌面应用补功能、修界面并扩展交互。",
+      "audience": "适合桌面工具 PM、效率工具开发者和重度 AI IDE 用户。",
+      "term_notes": []
     }
   ]
 }
