@@ -1,86 +1,22 @@
 {
-  "generated_on": "2026-05-11T12:28:07+00:00",
+  "generated_on": "2026-05-18T12:56:43+00:00",
   "days": 7,
   "top": 10,
   "min_stars": 150,
   "projects": [
     {
-      "name": "antirez/ds4",
-      "url": "https://github.com/antirez/ds4",
-      "description": "DeepSeek 4 Flash local inference engine for Metal",
-      "language": "C",
-      "stars": 7020,
-      "topics": [],
-      "created_at": "2026-05-06T17:17:05Z",
-      "updated_at": "2026-05-11T12:28:00Z",
-      "headline": "这是一个在做“DeepSeek 4 Flash local inference engine for Metal”的项目。",
-      "use_case": "你会在这样的场景里需要它：DeepSeek 4 Flash local inference engine for Metal",
-      "implementation": "它当前公开的做法是：intentionally narrow: not a generic GGUF runner, not a wrapper around another",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
-      "term_notes": []
-    },
-    {
-      "name": "V4bel/dirtyfrag",
-      "url": "https://github.com/V4bel/dirtyfrag",
+      "name": "FULU-Foundation/OrcaSlicer-bambulab",
+      "url": "https://github.com/FULU-Foundation/OrcaSlicer-bambulab",
       "description": "",
-      "language": "C",
-      "stars": 4133,
+      "language": "C++",
+      "stars": 5844,
       "topics": [],
-      "created_at": "2026-05-07T18:18:28Z",
-      "updated_at": "2026-05-11T12:20:43Z",
-      "headline": "这是一个围绕 CVE-2026-43284 漏洞做复现和分析的安全项目。",
-      "use_case": "如果你要快速理解 CVE-2026-43284 的影响和复现路径，这个仓库相当于一份可操作实验材料。",
-      "implementation": "它把漏洞编号、复现目标和实验线索集中整理，方便直接搭环境验证。",
-      "audience": "适合安全研究员、漏洞分析人员和想快速跟进漏洞细节的开发者。",
-      "term_notes": [
-        {
-          "term": "CVE",
-          "note": "公开披露的安全漏洞编号"
-        }
-      ]
-    },
-    {
-      "name": "vercel-labs/zero-native",
-      "url": "https://github.com/vercel-labs/zero-native",
-      "description": "Build desktop + mobile apps with Zig and web UI",
-      "language": "Zig",
-      "stars": 2481,
-      "topics": [],
-      "created_at": "2026-05-08T19:53:41Z",
-      "updated_at": "2026-05-11T12:27:32Z",
-      "headline": "这是一个在做“Build desktop + mobile apps with Zig and web UI”的项目。",
-      "use_case": "你会在这样的场景里需要它：Build desktop + mobile apps with Zig and web UI",
-      "implementation": "它当前公开的做法是：zero-native is a Zig desktop app shell for modern web frontends. Use the platform WebView…",
+      "created_at": "2026-05-11T17:44:55Z",
+      "updated_at": "2026-05-18T12:54:41Z",
+      "headline": "这是一个在做“This version of OrcaSlicer restores full BambuNetwork support…”的项目。",
+      "use_case": "从 README 看，它更像是给这类需求准备的：This version of OrcaSlicer restores full BambuNetwork support for Bambu Lab printers.",
+      "implementation": "它当前公开的做法是：You are not limited to LAN only.",
       "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
-      "term_notes": []
-    },
-    {
-      "name": "strukto-ai/mirage",
-      "url": "https://github.com/strukto-ai/mirage",
-      "description": "A Unified Virtual Filesystem For AI Agents",
-      "language": "TypeScript",
-      "stars": 1857,
-      "topics": [
-        "agent-sandbox",
-        "agent-tools",
-        "ai-agents",
-        "bash",
-        "claude-code",
-        "fuse",
-        "langchain",
-        "llm-agents",
-        "openai-agents",
-        "python",
-        "typescript",
-        "vfs",
-        "virtual-filesystem"
-      ],
-      "created_at": "2026-05-06T17:00:48Z",
-      "updated_at": "2026-05-11T12:21:45Z",
-      "headline": "这是一个在做“A Unified Virtual Filesystem For AI Agents”的项目。",
-      "use_case": "你会在这样的场景里需要它：A Unified Virtual Filesystem For AI Agents",
-      "implementation": "它当前公开的做法是：AI agents reach every backend with the same handful of Unix-like tools, and pipelines com…",
-      "audience": "最适合关注它的人：在做 agent-sandbox、agent-tools 方向产品判断或技术落地的人。",
       "term_notes": [
         {
           "term": "RAG",
@@ -89,129 +25,200 @@
       ]
     },
     {
-      "name": "XBuilderLAB/cheat-on-content",
-      "url": "https://github.com/XBuilderLAB/cheat-on-content",
-      "description": "You're reading this. The skill predicted it. A workflow that turns every post into a calibrated experiment—score, blind-predict, retro, evolve. The future doesn't reward effort, it rewards those who see the pattern first. 1M followers in a month — not luck, system.",
-      "language": "Shell",
-      "stars": 1621,
+      "name": "Nightmare-Eclipse/YellowKey",
+      "url": "https://github.com/Nightmare-Eclipse/YellowKey",
+      "description": "YellowKey Bitlocker Bypass Vulnerability",
+      "language": "Unknown",
+      "stars": 3282,
       "topics": [],
-      "created_at": "2026-05-05T10:28:33Z",
-      "updated_at": "2026-05-11T11:57:38Z",
-      "headline": "这是一个在做“You're reading this. The skill predicted it. A workflow that…”的项目。",
-      "use_case": "你会在这样的场景里需要它：You're reading this. The skill predicted it. A workflow that turns every post into a cali…",
-      "implementation": "它当前公开的做法是：You're reading this. The skill predicted it.",
+      "created_at": "2026-05-12T15:54:59Z",
+      "updated_at": "2026-05-18T12:53:18Z",
+      "headline": "这是一个在做“YellowKey Bitlocker Bypass Vulnerability”的项目。",
+      "use_case": "你会在这样的场景里需要它：YellowKey Bitlocker Bypass Vulnerability",
+      "implementation": "它当前公开的做法是：Been a while since I saw a bitlocker bypass around, my turn.",
+      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "term_notes": [
+        {
+          "term": "RAG",
+          "note": "检索增强生成（Retrieval-Augmented Generation）"
+        }
+      ]
+    },
+    {
+      "name": "nexu-io/html-anything",
+      "url": "https://github.com/nexu-io/html-anything",
+      "description": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
+      "language": "HTML",
+      "stars": 3097,
+      "topics": [
+        "agent-skills",
+        "agentic",
+        "ai-agents",
+        "ai-design",
+        "ai-editor",
+        "byok",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "coding-agents",
+        "generative-ai",
+        "html",
+        "html-editor",
+        "hyperframes",
+        "local-first",
+        "markdown",
+        "nextjs",
+        "vibe-coding",
+        "wechat",
+        "xiaohongshu"
+      ],
+      "created_at": "2026-05-11T09:40:38Z",
+      "updated_at": "2026-05-18T12:55:30Z",
+      "headline": "这是一个在做“The agentic HTML editor — your local AI agent writes the HTML…”的项目。",
+      "use_case": "你会在这样的场景里需要它：The agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 Skills × 9…",
+      "implementation": "它当前公开的做法是：Markdown is the draft. HTML is what humans read. Your local agent writes it.** The agenti…",
+      "audience": "最适合关注它的人：在做 agent-skills、agentic 方向产品判断或技术落地的人。",
+      "term_notes": [
+        {
+          "term": "BYOK",
+          "note": "自带 API Key（Bring Your Own Key）"
+        },
+        {
+          "term": "DPI",
+          "note": "深度包检测（Deep Packet Inspection）"
+        },
+        {
+          "term": "local-first",
+          "note": "本地优先，核心数据和工作流优先在本机完成"
+        }
+      ]
+    },
+    {
+      "name": "vercel-labs/zero",
+      "url": "https://github.com/vercel-labs/zero",
+      "description": "The programming language for agents",
+      "language": "C",
+      "stars": 2065,
+      "topics": [],
+      "created_at": "2026-05-15T16:55:16Z",
+      "updated_at": "2026-05-18T12:55:52Z",
+      "headline": "这是一个在做“The programming language for agents”的项目。",
+      "use_case": "你会在这样的场景里需要它：The programming language for agents",
+      "implementation": "它当前公开的做法是：Zero is experimental and still changing. The compiler, standard library, docs, and exampl…",
+      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "term_notes": []
+    },
+    {
+      "name": "yetone/native-feel-skill",
+      "url": "https://github.com/yetone/native-feel-skill",
+      "description": "An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit.",
+      "language": "Unknown",
+      "stars": 1303,
+      "topics": [],
+      "created_at": "2026-05-14T19:28:43Z",
+      "updated_at": "2026-05-18T11:22:36Z",
+      "headline": "这是一个在做“An Agent Skill for designing cross-platform desktop apps that…”的项目。",
+      "use_case": "你会在这样的场景里需要它：An Agent Skill for designing cross-platform desktop apps that feel native — distilled fro…",
+      "implementation": "它当前公开的做法是：An Agent Skill for designing cross-platform desktop apps that feel native** — distilled f…",
+      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "term_notes": []
+    },
+    {
+      "name": "HermannBjorgvin/Clawdmeter",
+      "url": "https://github.com/HermannBjorgvin/Clawdmeter",
+      "description": "ESP32 desk dashboard that shows Claude Code usage",
+      "language": "C",
+      "stars": 1172,
+      "topics": [],
+      "created_at": "2026-05-11T03:07:49Z",
+      "updated_at": "2026-05-18T12:38:42Z",
+      "headline": "这是一个在做“ESP32 desk dashboard that shows Claude Code usage”的项目。",
+      "use_case": "你会在这样的场景里需要它：ESP32 desk dashboard that shows Claude Code usage",
+      "implementation": "它当前公开的做法是：It runs on a Waveshare ESP32-S3-Touch-AMOLED-2.16 and pairs with my laptop over Bluetooth…",
+      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "term_notes": []
+    },
+    {
+      "name": "simonlin1212/a-stock-data",
+      "url": "https://github.com/simonlin1212/a-stock-data",
+      "description": "A股全栈数据工具包 — 7层架构 · 28端点 · 13数据源 · 零第三方依赖 | Full-stack China A-Share data toolkit for AI coding assistants",
+      "language": "Unknown",
+      "stars": 1169,
+      "topics": [],
+      "created_at": "2026-05-11T01:08:15Z",
+      "updated_at": "2026-05-18T12:35:52Z",
+      "headline": "这是一个在做“A股全栈数据工具包 — 7层架构 · 28端点 · 13数据源 · 零第三方依赖 | Full-stack China A…”的项目。",
+      "use_case": "你会在这样的场景里需要它：A股全栈数据工具包 — 7层架构 · 28端点 · 13数据源 · 零第三方依赖 | Full-stack China A-Share data toolkit for AI c…",
+      "implementation": "它当前公开的做法是：一个自包含的 Skill 文件，把分散在 13 个数据源里的 A 股原始数据整合成 AI 编程助手直接能用的工具集。你不用再背 mootdx 的 K 线参数、东财的 PDF Re…",
+      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "term_notes": [
+        {
+          "term": "RAG",
+          "note": "检索增强生成（Retrieval-Augmented Generation）"
+        }
+      ]
+    },
+    {
+      "name": "ywnd1144/Gopay_plus_automatic",
+      "url": "https://github.com/ywnd1144/Gopay_plus_automatic",
+      "description": "",
+      "language": "Python",
+      "stars": 926,
+      "topics": [],
+      "created_at": "2026-05-12T11:29:47Z",
+      "updated_at": "2026-05-18T08:41:14Z",
+      "headline": "这是一个在做“全自动 ChatGPT Plus 订阅工具。给定一个 ChatGPT access_token ，本项目会在 **约 20…”的项目。",
+      "use_case": "从 README 看，它更像是给这类需求准备的：全自动 ChatGPT Plus 订阅工具。给定一个 ChatGPT access_token ，本项目会在 **约 20 秒** 内通过 Stripe → Midtra…",
+      "implementation": "它当前公开的做法是：此项目将不会再进行更新，仅供研究、娱乐、学习，有能力者自行二开。**",
+      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "term_notes": []
+    },
+    {
+      "name": "facebookresearch/vggt-omega",
+      "url": "https://github.com/facebookresearch/vggt-omega",
+      "description": "[CVPR 2026 Oral] VGGT Omega",
+      "language": "Python",
+      "stars": 908,
+      "topics": [],
+      "created_at": "2026-05-14T04:43:13Z",
+      "updated_at": "2026-05-18T12:52:59Z",
+      "headline": "这是一个在做“CVPR 2026 Oral] VGGT Omega”的项目。",
+      "use_case": "你会在这样的场景里需要它：CVPR 2026 Oral] VGGT Omega",
+      "implementation": "它当前公开的做法是：1 Visual Geometry Group, University of Oxford**; ** 2 Meta AI**",
       "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
       "term_notes": [
         {
           "term": "end-to-end",
           "note": "端到端，覆盖完整流程"
-        },
-        {
-          "term": "RAG",
-          "note": "检索增强生成（Retrieval-Augmented Generation）"
         }
       ]
     },
     {
-      "name": "yaojingang/yao-open-prompts",
-      "url": "https://github.com/yaojingang/yao-open-prompts",
-      "description": "Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
-      "language": "Python",
-      "stars": 1611,
+      "name": "DenisSergeevitch/agents-best-practices",
+      "url": "https://github.com/DenisSergeevitch/agents-best-practices",
+      "description": "Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design.",
+      "language": "Unknown",
+      "stars": 785,
       "topics": [
-        "ai",
-        "chinese-prompts",
-        "geo",
-        "prompt-engineering",
-        "prompts"
+        "agent-skill",
+        "agent-skills",
+        "agentic-workflows",
+        "agents",
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "codex",
+        "codex-skill",
+        "mcp",
+        "prompt-engineering"
       ],
-      "created_at": "2026-05-06T13:04:20Z",
-      "updated_at": "2026-05-11T12:20:23Z",
-      "headline": "这是一个在做“Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景”的项目。",
-      "use_case": "你会在这样的场景里需要它：Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
-      "implementation": "它当前公开的做法是：姚金刚提示词合集》的开源版本，一个面向真实工作、学习、内容、营销和生活场景的中文 AI 提示词库。",
-      "audience": "最适合关注它的人：在做 ai、chinese-prompts 方向产品判断或技术落地的人。",
-      "term_notes": []
-    },
-    {
-      "name": "huangserva/3DCellForge",
-      "url": "https://github.com/huangserva/3DCellForge",
-      "description": "AI-powered interactive 3D cell generation and exploration studio.",
-      "language": "JavaScript",
-      "stars": 1178,
-      "topics": [],
-      "created_at": "2026-05-10T10:34:50Z",
-      "updated_at": "2026-05-11T12:27:17Z",
-      "headline": "这是一个在做“AI-powered interactive 3D cell generation and exploration stu…”的项目。",
-      "use_case": "你会在这样的场景里需要它：AI-powered interactive 3D cell generation and exploration studio.",
-      "implementation": "它当前公开的做法是：3DCellForge is a React + Three.js prototype for exploring biological cell models in a pol…",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
-      "term_notes": [
-        {
-          "term": "RAG",
-          "note": "检索增强生成（Retrieval-Augmented Generation）"
-        }
-      ]
-    },
-    {
-      "name": "lightseekorg/tokenspeed",
-      "url": "https://github.com/lightseekorg/tokenspeed",
-      "description": "TokenSpeed is a speed-of-light LLM inference engine.",
-      "language": "Python",
-      "stars": 939,
-      "topics": [
-        "blackwell",
-        "deepseek",
-        "gpt-oss",
-        "kimi",
-        "lightseek",
-        "llm",
-        "minimax",
-        "qwen",
-        "speed-of-light",
-        "tokenspeed"
-      ],
-      "created_at": "2026-05-06T13:13:21Z",
-      "updated_at": "2026-05-11T12:21:40Z",
-      "headline": "这是一个在做“TokenSpeed is a speed-of-light LLM inference engine.”的项目。",
-      "use_case": "你会在这样的场景里需要它：TokenSpeed is a speed-of-light LLM inference engine.",
-      "implementation": "它当前公开的做法是：Modeling layer**: local-SPMD design with a static compiler that generates",
-      "audience": "最适合关注它的人：在做 blackwell、deepseek 方向产品判断或技术落地的人。",
-      "term_notes": [
-        {
-          "term": "RAG",
-          "note": "检索增强生成（Retrieval-Augmented Generation）"
-        }
-      ]
-    },
-    {
-      "name": "BigPizzaV3/CodexPlusPlus",
-      "url": "https://github.com/BigPizzaV3/CodexPlusPlus",
-      "description": "一个CodexApp的增强工具",
-      "language": "Python",
-      "stars": 910,
-      "topics": [],
-      "created_at": "2026-05-06T09:32:49Z",
-      "updated_at": "2026-05-11T12:22:39Z",
-      "headline": "这是一个在做“一个CodexApp的增强工具”的项目。",
-      "use_case": "你会在这样的场景里需要它：一个CodexApp的增强工具",
-      "implementation": "它当前公开的做法是：优先尝试服务端删除；不可用时删除本地 Codex SQLite 会话记录",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
-      "term_notes": []
-    },
-    {
-      "name": "zarazhangrui/beautiful-html-templates",
-      "url": "https://github.com/zarazhangrui/beautiful-html-templates",
-      "description": "A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically.",
-      "language": "HTML",
-      "stars": 824,
-      "topics": [],
-      "created_at": "2026-05-05T06:18:21Z",
-      "updated_at": "2026-05-11T12:12:25Z",
-      "headline": "这是一个在做“A library of HTML slide templates designed so any coding agen…”的项目。",
-      "use_case": "你会在这样的场景里需要它：A library of HTML slide templates designed so any coding agent can pick the right one and…",
-      "implementation": "它当前公开的做法是：Agents using the library should read AGENTS.md . It's the operating manual: how to read i…",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "created_at": "2026-05-15T21:32:21Z",
+      "updated_at": "2026-05-18T12:56:12Z",
+      "headline": "这是一个在做“Provider-neutral Agent Skill for Codex, Claude Code, and agen…”的项目。",
+      "use_case": "你会在这样的场景里需要它：Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design.",
+      "implementation": "它当前公开的做法是：A provider-neutral Agent Skill for designing, generating MVP blueprints for, auditing, re…",
+      "audience": "最适合关注它的人：在做 agent-skill、agent-skills 方向产品判断或技术落地的人。",
       "term_notes": []
     }
   ]

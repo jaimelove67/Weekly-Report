@@ -1,85 +1,85 @@
 # GitHub 每周热门项目速读
 
-- 生成日期：2026-05-11
+- 生成日期：2026-05-18
 - 统计窗口：近 7 天
 - 项目数量：10
 
-## 1. [antirez/ds4](https://github.com/antirez/ds4)
+## 1. [FULU-Foundation/OrcaSlicer-bambulab](https://github.com/FULU-Foundation/OrcaSlicer-bambulab)
 
-- 这是什么：这是一个在做“DeepSeek 4 Flash local inference engine for Metal”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：DeepSeek 4 Flash local inference engine for Metal
-- 怎么实现：它当前公开的做法是：intentionally narrow: not a generic GGUF runner, not a wrapper around another
+- 这是什么：这是一个在做“This version of OrcaSlicer restores full BambuNetwork support…”的项目。
+- 能拿来干嘛：从 README 看，它更像是给这类需求准备的：This version of OrcaSlicer restores full BambuNetwork support for Bambu Lab printers.
+- 怎么实现：它当前公开的做法是：You are not limited to LAN only.
 - 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
-- 基本信息：7020 星；主要语言 C；主题 无
+- 基本信息：5844 星；主要语言 C++；主题 无
 
-## 2. [V4bel/dirtyfrag](https://github.com/V4bel/dirtyfrag)
+## 2. [Nightmare-Eclipse/YellowKey](https://github.com/Nightmare-Eclipse/YellowKey)
 
-- 这是什么：这是一个围绕 CVE-2026-43284 漏洞做复现和分析的安全项目。
-- 能拿来干嘛：如果你要快速理解 CVE-2026-43284 的影响和复现路径，这个仓库相当于一份可操作实验材料。
-- 怎么实现：它把漏洞编号、复现目标和实验线索集中整理，方便直接搭环境验证。
-- 谁该看：适合安全研究员、漏洞分析人员和想快速跟进漏洞细节的开发者。
-- 基本信息：4133 星；主要语言 C；主题 无
-
-## 3. [vercel-labs/zero-native](https://github.com/vercel-labs/zero-native)
-
-- 这是什么：这是一个在做“Build desktop + mobile apps with Zig and web UI”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：Build desktop + mobile apps with Zig and web UI
-- 怎么实现：它当前公开的做法是：zero-native is a Zig desktop app shell for modern web frontends. Use the platform WebView…
+- 这是什么：这是一个在做“YellowKey Bitlocker Bypass Vulnerability”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：YellowKey Bitlocker Bypass Vulnerability
+- 怎么实现：它当前公开的做法是：Been a while since I saw a bitlocker bypass around, my turn.
 - 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
-- 基本信息：2481 星；主要语言 Zig；主题 无
+- 基本信息：3282 星；主要语言 Unknown；主题 无
 
-## 4. [strukto-ai/mirage](https://github.com/strukto-ai/mirage)
+## 3. [nexu-io/html-anything](https://github.com/nexu-io/html-anything)
 
-- 这是什么：这是一个在做“A Unified Virtual Filesystem For AI Agents”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：A Unified Virtual Filesystem For AI Agents
-- 怎么实现：它当前公开的做法是：AI agents reach every backend with the same handful of Unix-like tools, and pipelines com…
-- 谁该看：最适合关注它的人：在做 agent-sandbox、agent-tools 方向产品判断或技术落地的人。
-- 基本信息：1857 星；主要语言 TypeScript；主题 agent-sandbox、agent-tools、ai-agents、bash、claude-code
+- 这是什么：这是一个在做“The agentic HTML editor — your local AI agent writes the HTML…”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：The agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 Skills × 9…
+- 怎么实现：它当前公开的做法是：Markdown is the draft. HTML is what humans read. Your local agent writes it.** The agenti…
+- 谁该看：最适合关注它的人：在做 agent-skills、agentic 方向产品判断或技术落地的人。
+- 基本信息：3097 星；主要语言 HTML；主题 agent-skills、agentic、ai-agents、ai-design、ai-editor
 
-## 5. [XBuilderLAB/cheat-on-content](https://github.com/XBuilderLAB/cheat-on-content)
+## 4. [vercel-labs/zero](https://github.com/vercel-labs/zero)
 
-- 这是什么：这是一个在做“You're reading this. The skill predicted it. A workflow that…”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：You're reading this. The skill predicted it. A workflow that turns every post into a cali…
-- 怎么实现：它当前公开的做法是：You're reading this. The skill predicted it.
+- 这是什么：这是一个在做“The programming language for agents”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：The programming language for agents
+- 怎么实现：它当前公开的做法是：Zero is experimental and still changing. The compiler, standard library, docs, and exampl…
 - 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
-- 基本信息：1621 星；主要语言 Shell；主题 无
+- 基本信息：2065 星；主要语言 C；主题 无
 
-## 6. [yaojingang/yao-open-prompts](https://github.com/yaojingang/yao-open-prompts)
+## 5. [yetone/native-feel-skill](https://github.com/yetone/native-feel-skill)
 
-- 这是什么：这是一个在做“Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景
-- 怎么实现：它当前公开的做法是：姚金刚提示词合集》的开源版本，一个面向真实工作、学习、内容、营销和生活场景的中文 AI 提示词库。
-- 谁该看：最适合关注它的人：在做 ai、chinese-prompts 方向产品判断或技术落地的人。
-- 基本信息：1611 星；主要语言 Python；主题 ai、chinese-prompts、geo、prompt-engineering、prompts
-
-## 7. [huangserva/3DCellForge](https://github.com/huangserva/3DCellForge)
-
-- 这是什么：这是一个在做“AI-powered interactive 3D cell generation and exploration stu…”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：AI-powered interactive 3D cell generation and exploration studio.
-- 怎么实现：它当前公开的做法是：3DCellForge is a React + Three.js prototype for exploring biological cell models in a pol…
+- 这是什么：这是一个在做“An Agent Skill for designing cross-platform desktop apps that…”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：An Agent Skill for designing cross-platform desktop apps that feel native — distilled fro…
+- 怎么实现：它当前公开的做法是：An Agent Skill for designing cross-platform desktop apps that feel native** — distilled f…
 - 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
-- 基本信息：1178 星；主要语言 JavaScript；主题 无
+- 基本信息：1303 星；主要语言 Unknown；主题 无
 
-## 8. [lightseekorg/tokenspeed](https://github.com/lightseekorg/tokenspeed)
+## 6. [HermannBjorgvin/Clawdmeter](https://github.com/HermannBjorgvin/Clawdmeter)
 
-- 这是什么：这是一个在做“TokenSpeed is a speed-of-light LLM inference engine.”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：TokenSpeed is a speed-of-light LLM inference engine.
-- 怎么实现：它当前公开的做法是：Modeling layer**: local-SPMD design with a static compiler that generates
-- 谁该看：最适合关注它的人：在做 blackwell、deepseek 方向产品判断或技术落地的人。
-- 基本信息：939 星；主要语言 Python；主题 blackwell、deepseek、gpt-oss、kimi、lightseek
-
-## 9. [BigPizzaV3/CodexPlusPlus](https://github.com/BigPizzaV3/CodexPlusPlus)
-
-- 这是什么：这是一个在做“一个CodexApp的增强工具”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：一个CodexApp的增强工具
-- 怎么实现：它当前公开的做法是：优先尝试服务端删除；不可用时删除本地 Codex SQLite 会话记录
+- 这是什么：这是一个在做“ESP32 desk dashboard that shows Claude Code usage”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：ESP32 desk dashboard that shows Claude Code usage
+- 怎么实现：它当前公开的做法是：It runs on a Waveshare ESP32-S3-Touch-AMOLED-2.16 and pairs with my laptop over Bluetooth…
 - 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
-- 基本信息：910 星；主要语言 Python；主题 无
+- 基本信息：1172 星；主要语言 C；主题 无
 
-## 10. [zarazhangrui/beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates)
+## 7. [simonlin1212/a-stock-data](https://github.com/simonlin1212/a-stock-data)
 
-- 这是什么：这是一个在做“A library of HTML slide templates designed so any coding agen…”的项目。
-- 能拿来干嘛：你会在这样的场景里需要它：A library of HTML slide templates designed so any coding agent can pick the right one and…
-- 怎么实现：它当前公开的做法是：Agents using the library should read AGENTS.md . It's the operating manual: how to read i…
+- 这是什么：这是一个在做“A股全栈数据工具包 — 7层架构 · 28端点 · 13数据源 · 零第三方依赖 | Full-stack China A…”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：A股全栈数据工具包 — 7层架构 · 28端点 · 13数据源 · 零第三方依赖 | Full-stack China A-Share data toolkit for AI c…
+- 怎么实现：它当前公开的做法是：一个自包含的 Skill 文件，把分散在 13 个数据源里的 A 股原始数据整合成 AI 编程助手直接能用的工具集。你不用再背 mootdx 的 K 线参数、东财的 PDF Re…
 - 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
-- 基本信息：824 星；主要语言 HTML；主题 无
+- 基本信息：1169 星；主要语言 Unknown；主题 无
+
+## 8. [ywnd1144/Gopay_plus_automatic](https://github.com/ywnd1144/Gopay_plus_automatic)
+
+- 这是什么：这是一个在做“全自动 ChatGPT Plus 订阅工具。给定一个 ChatGPT access_token ，本项目会在 **约 20…”的项目。
+- 能拿来干嘛：从 README 看，它更像是给这类需求准备的：全自动 ChatGPT Plus 订阅工具。给定一个 ChatGPT access_token ，本项目会在 **约 20 秒** 内通过 Stripe → Midtra…
+- 怎么实现：它当前公开的做法是：此项目将不会再进行更新，仅供研究、娱乐、学习，有能力者自行二开。**
+- 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
+- 基本信息：926 星；主要语言 Python；主题 无
+
+## 9. [facebookresearch/vggt-omega](https://github.com/facebookresearch/vggt-omega)
+
+- 这是什么：这是一个在做“CVPR 2026 Oral] VGGT Omega”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：CVPR 2026 Oral] VGGT Omega
+- 怎么实现：它当前公开的做法是：1 Visual Geometry Group, University of Oxford**; ** 2 Meta AI**
+- 谁该看：最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。
+- 基本信息：908 星；主要语言 Python；主题 无
+
+## 10. [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices)
+
+- 这是什么：这是一个在做“Provider-neutral Agent Skill for Codex, Claude Code, and agen…”的项目。
+- 能拿来干嘛：你会在这样的场景里需要它：Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design.
+- 怎么实现：它当前公开的做法是：A provider-neutral Agent Skill for designing, generating MVP blueprints for, auditing, re…
+- 谁该看：最适合关注它的人：在做 agent-skill、agent-skills 方向产品判断或技术落地的人。
+- 基本信息：785 星；主要语言 Unknown；主题 agent-skill、agent-skills、agentic-workflows、agents、ai-agents
