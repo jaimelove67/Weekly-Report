@@ -260,6 +260,180 @@ def extract_cve_identifier(*texts: str) -> str:
     return match.group(0).upper() if match else ""
 
 
+def contains_cjk(text: str) -> bool:
+    return bool(re.search(r"[\u4e00-\u9fff]", text))
+
+
+def is_mostly_english(text: str) -> bool:
+    compact = normalize_plain_text(text)
+    if not compact:
+        return False
+    ascii_chars = len(re.findall(r"[A-Za-z]", compact))
+    cjk_chars = len(re.findall(r"[\u4e00-\u9fff]", compact))
+    return ascii_chars >= 18 and ascii_chars > cjk_chars * 2
+
+
+def source_context(repo: dict[str, Any], readme: str, *extra: str) -> str:
+    parts = [
+        repo.get("full_name", ""),
+        repo.get("name", ""),
+        repo.get("description") or "",
+        " ".join(repo.get("topics") or []),
+        readme[:2200],
+        *extra,
+    ]
+    return " ".join(parts).lower()
+
+
+def classify_project(repo: dict[str, Any], readme: str) -> dict[str, str]:
+    merged = source_context(repo, readme)
+    language = repo.get("language") or "开源"
+
+    rules: list[tuple[tuple[str, ...], dict[str, str]]] = [
+        (
+            ("orcaslicer", "bambu", "3d print", "3d-print", "printer"),
+            {
+                "domain": "3D 打印软件与设备生态集成",
+                "artifact": "桌面切片软件兼容性项目",
+                "use_case": "用于评估 Bambu Lab 打印机网络连接、远程控制与切片软件生态兼容能力。",
+                "implementation": "通常通过恢复云端/局域网通信适配、设备发现和打印机控制链路来补齐兼容性。",
+                "audience": "面向 3D 打印软件维护者、设备生态集成团队和桌面客户端开发者，用于判断打印机网络能力的复用价值。",
+            },
+        ),
+        (
+            (
+                "open-design",
+                "ai-design",
+                "claude design",
+                "figma",
+                "prototype",
+                "ui-generator",
+                "design-system",
+                "design systems",
+            ),
+            {
+                "domain": "AI 设计工具与原型生产",
+                "artifact": "AI 设计工作流项目",
+                "use_case": "用于搭建从需求描述到界面原型、设计系统和多格式导出的自动化链路。",
+                "implementation": "通过设计代理、模板系统和导出管线把原型生成能力封装成可复用工作流。",
+                "audience": "面向设计工具 PM、前端架构师和设计系统团队，用于评估 AI 设计流程的落地方式。",
+            },
+        ),
+        (
+            ("cursor", "codex", "agent", "sdk", "coding-agent", "ai coding"),
+            {
+                "domain": "AI 编程工具与开发者工作流",
+                "artifact": "AI 开发工具集成项目",
+                "use_case": "用于评估 AI 编码能力如何接入现有研发工具、IDE 或自动化开发流程。",
+                "implementation": "通过 SDK、插件或示例工程暴露模型调用、代理编排和上下文管理能力。",
+                "audience": "面向开发者工具 PM、平台工程师和研发效能团队，用于判断 AI 编码能力的集成成本。",
+            },
+        ),
+        (
+            ("rag", "knowledge", "legal", "document", "retrieval"),
+            {
+                "domain": "垂直知识库与文档智能",
+                "artifact": "行业知识处理项目",
+                "use_case": "用于把专业文档的检索、问答、摘要和工作流处理整合进业务系统。",
+                "implementation": "通常采用文档解析、向量检索、权限控制和大模型问答组合成完整应用。",
+                "audience": "面向行业 SaaS PM、知识库架构师和企业 AI 应用团队，用于评估垂直场景产品化路径。",
+            },
+        ),
+        (
+            ("macos", "menubar", "swift", "desktop-app", "usb-c", "hardware"),
+            {
+                "domain": "macOS 桌面工具与硬件诊断",
+                "artifact": "桌面效率工具项目",
+                "use_case": "用于把系统级硬件、外设或状态信息转成用户可直接决策的桌面提示。",
+                "implementation": "通过系统 API 读取设备状态，再用轻量桌面界面呈现能力、限制和操作建议。",
+                "audience": "面向桌面工具 PM、Swift/macOS 开发者和硬件集成团队，用于参考系统信息产品化方式。",
+            },
+        ),
+        (
+            ("subscription", "hcaptcha", "protocol replay", "protocol-replay", "anti-fraud", "stripe"),
+            {
+                "domain": "支付订阅链路与反欺诈研究",
+                "artifact": "协议重放与风控验证项目",
+                "use_case": "用于分析订阅支付流程中的协议细节、验证码处理和反欺诈校验机制。",
+                "implementation": "通过协议重放、自动化验证和实验数据整理还原完整订阅链路。",
+                "audience": "面向支付风控工程师、安全研究员和订阅系统后端开发者，用于评估链路风险与防护策略。",
+            },
+        ),
+        (
+            ("cloudflare workers", "proxy", "relay", "network", "dpi", "domain fronting"),
+            {
+                "domain": "网络代理与边缘转发",
+                "artifact": "网络链路中继项目",
+                "use_case": "用于验证受限网络下的连通性、流量转发路径和边缘函数承载能力。",
+                "implementation": "通过代理入口、边缘函数和请求转发规则串联出可复用的网络链路。",
+                "audience": "面向网络工程师、安全研究员和边缘计算开发者，用于评估链路可达性与转发策略。",
+            },
+        ),
+        (
+            ("bitlocker", "yellowkey"),
+            {
+                "domain": "终端安全与磁盘加密攻防",
+                "artifact": "BitLocker 绕过漏洞研究项目",
+                "use_case": "用于跟进 BitLocker 加密绕过风险、验证攻击前提并评估终端防护影响面。",
+                "implementation": "通常围绕漏洞触发条件、绕过路径和复现实验脚本整理可验证的研究材料。",
+                "audience": "面向安全研究员、终端安全工程师和企业安全响应团队，用于评估磁盘加密绕过风险。",
+            },
+        ),
+        (
+            ("cve-", "vulnerability", "exploit", "rce"),
+            {
+                "domain": "漏洞复现与安全研究",
+                "artifact": "漏洞验证项目",
+                "use_case": "用于快速理解漏洞影响范围、复现条件和安全修复优先级。",
+                "implementation": "通过复现脚本、触发样例和环境说明把漏洞分析转成可验证材料。",
+                "audience": "面向安全研究员、漏洞分析人员和安全运营团队，用于完成风险验证与处置研判。",
+            },
+        ),
+    ]
+
+    for keywords, profile in rules:
+        if any(keyword in merged for keyword in keywords):
+            return profile
+
+    topic_hint = "、".join(repo.get("topics", [])[:2])
+    domain = f"{topic_hint} 方向" if topic_hint else f"{language} 生态"
+    return {
+        "domain": domain,
+        "artifact": f"{domain} 的开源项目",
+        "use_case": f"用于判断 {domain} 里是否已有可复用的产品方案、技术路径或工程样例。",
+        "implementation": f"从仓库形态看，它主要以 {language} 技术栈沉淀工具、应用或示例代码。",
+        "audience": f"面向负责 {domain} 选型的产品负责人、架构师和实现工程师，用于快速评估复用价值与落地成本。",
+    }
+
+
+def leading_space_for_ascii(text: str) -> str:
+    return " " if re.match(r"[A-Za-z0-9]", text) else ""
+
+
+def build_profile_headline(profile: dict[str, str]) -> str:
+    artifact = profile["artifact"]
+    domain = profile["domain"]
+    return (
+        f"这是一个{leading_space_for_ascii(artifact)}{artifact}，"
+        f"主要服务于{leading_space_for_ascii(domain)}{domain}。"
+    )
+
+
+def refine_summary(
+    repo: dict[str, Any], readme: str, summary: dict[str, Any]
+) -> dict[str, Any]:
+    profile = classify_project(repo, readme)
+    refined = dict(summary)
+    if is_mostly_english(refined.get("headline", "")):
+        refined["headline"] = build_profile_headline(profile)
+    if is_mostly_english(refined.get("use_case", "")):
+        refined["use_case"] = profile["use_case"]
+    if is_mostly_english(refined.get("implementation", "")):
+        refined["implementation"] = profile["implementation"]
+    refined["audience"] = profile["audience"]
+    return normalize_summary_payload(refined)
+
+
 def normalize_summary_payload(payload: dict[str, Any]) -> dict[str, Any]:
     term_notes: list[dict[str, str]] = []
     for raw_note in payload.get("term_notes", [])[:3]:
@@ -398,6 +572,8 @@ def maybe_summarize_with_openai(
 
         要求：
         - 用中文写，允许保留必要英文术语
+        - audience 必须写成清晰的专业角色画像，例如“面向安全研究员、终端安全工程师和企业安全响应团队”
+        - audience 不要写成“PM 或开发者”“相关人员”“关注者”这类泛泛描述
         - 不要泛泛写“热度高”“很强”
         - 让没看过仓库的人 10 秒内就能抓到用途和判断值不值得点进去
 
@@ -450,6 +626,7 @@ def fallback_summary(repo: dict[str, Any], readme: str) -> dict[str, Any]:
     if pattern_summary:
         return pattern_summary
 
+    profile = classify_project(repo, readme)
     description = first_nonempty(repo.get("description") or "")
     signals = extract_signal_lines(readme)
     primary_signal = first_nonempty(signals[0] if signals else "", description)
@@ -465,31 +642,35 @@ def fallback_summary(repo: dict[str, Any], readme: str) -> dict[str, Any]:
     )
 
     headline_source = first_nonempty(description, primary_signal)
-    if headline_source:
+    if (
+        headline_source
+        and contains_cjk(headline_source)
+        and not is_mostly_english(headline_source)
+    ):
         headline = f"这是一个在做“{shorten(headline_source, 62)}”的项目。"
     else:
-        headline = f"这是一个近期快速升温的 {repo.get('language') or '开源'} 项目。"
+        headline = build_profile_headline(profile)
 
-    if description:
-        use_case = f"你会在这样的场景里需要它：{shorten(description, 90)}"
-    elif primary_signal:
-        use_case = f"从 README 看，它更像是给这类需求准备的：{shorten(primary_signal, 90)}"
+    if description and contains_cjk(description) and not is_mostly_english(description):
+        use_case = f"适用于这类场景：{shorten(description, 90)}"
+    elif primary_signal and contains_cjk(primary_signal) and not is_mostly_english(primary_signal):
+        use_case = f"从 README 看，它主要服务于：{shorten(primary_signal, 90)}"
     else:
-        use_case = "当前公开信息不多，但它明显击中了一个最近升温很快的细分需求。"
+        use_case = profile["use_case"]
 
-    if secondary_signal:
-        implementation = f"它当前公开的做法是：{shorten(secondary_signal, 90)}"
-    elif primary_signal and primary_signal != description:
-        implementation = f"README 里最关键的实现线索是：{shorten(primary_signal, 90)}"
+    if secondary_signal and contains_cjk(secondary_signal) and not is_mostly_english(secondary_signal):
+        implementation = f"公开实现线索：{shorten(secondary_signal, 90)}"
+    elif (
+        primary_signal
+        and primary_signal != description
+        and contains_cjk(primary_signal)
+        and not is_mostly_english(primary_signal)
+    ):
+        implementation = f"README 中的关键实现线索：{shorten(primary_signal, 90)}"
     else:
-        language = repo.get("language") or "多语言"
-        implementation = f"从仓库结构看，它主要以 {language} 生态下的工具或应用形态提供能力。"
+        implementation = profile["implementation"]
 
-    topic_hint = "、".join(repo.get("topics", [])[:2])
-    if topic_hint:
-        audience = f"最适合关注它的人：在做 {topic_hint} 方向产品判断或技术落地的人。"
-    else:
-        audience = "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。"
+    audience = profile["audience"]
 
     return normalize_summary_payload(
         {
@@ -506,7 +687,8 @@ def build_digest_items(repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     for repo in repos:
         readme = fetch_readme(repo["full_name"])
-        summary = maybe_summarize_with_openai(repo, readme) or fallback_summary(repo, readme)
+        raw_summary = maybe_summarize_with_openai(repo, readme) or fallback_summary(repo, readme)
+        summary = refine_summary(repo, readme, raw_summary)
         items.append(
             {
                 "name": repo["full_name"],
@@ -527,8 +709,10 @@ def build_digest_items(repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return items
 
 
-def render_markdown(days: int, items: list[dict[str, Any]]) -> str:
-    date_label = dt.date.today().isoformat()
+def render_markdown(
+    days: int, items: list[dict[str, Any]], generated_on: str | None = None
+) -> str:
+    date_label = generated_on[:10] if generated_on else dt.date.today().isoformat()
     lines = [
         "# GitHub 每周热门项目速读",
         "",
@@ -545,9 +729,9 @@ def render_markdown(days: int, items: list[dict[str, Any]]) -> str:
                 f"## {index}. [{item['name']}]({item['url']})",
                 "",
                 f"- 这是什么：{item['headline']}",
-                f"- 能拿来干嘛：{item['use_case']}",
-                f"- 怎么实现：{item['implementation']}",
-                f"- 谁该看：{item['audience']}",
+                f"- 应用场景：{item['use_case']}",
+                f"- 技术路径：{item['implementation']}",
+                f"- 目标读者：{item['audience']}",
                 f"- 基本信息：{item['stars']} 星；主要语言 {item['language']}；主题 {topic_text}",
             ]
         )
@@ -588,7 +772,7 @@ def main() -> int:
         "projects": items,
     }
 
-    write_text(args.output, render_markdown(args.days, items))
+    write_text(args.output, render_markdown(args.days, items, digest["generated_on"]))
     write_json(args.json_output, digest)
 
     print(f"Wrote {len(items)} projects to {args.output}")

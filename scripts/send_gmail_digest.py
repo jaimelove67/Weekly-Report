@@ -64,9 +64,9 @@ def build_preview_lines(payload: dict, limit: int = 5) -> list[str]:
     for index, project in enumerate(payload.get("projects", [])[:limit], start=1):
         lines.append(f"{index}. {project['name']} | {project['stars']} stars")
         lines.append(f"   这是什么：{project['headline']}")
-        lines.append(f"   能拿来干嘛：{project['use_case']}")
-        lines.append(f"   怎么实现：{project['implementation']}")
-        lines.append(f"   谁该看：{project['audience']}")
+        lines.append(f"   应用场景：{project['use_case']}")
+        lines.append(f"   技术路径：{project['implementation']}")
+        lines.append(f"   目标读者：{project['audience']}")
     return lines
 
 
@@ -94,16 +94,16 @@ def build_html_body(payload: dict) -> str:
     for index, project in enumerate(payload.get("projects", []), start=1):
         topic_text = "、".join(project.get("topics", [])[:5]) or "无"
         card = f"""
-        <div style="background:#ffffff;border:1px solid #dde5ee;border-radius:16px;padding:18px 20px;margin:0 0 18px;">
-          <div style="font-size:12px;color:#5f6b7a;margin-bottom:8px;">TOP {index}</div>
-          <div style="font-size:19px;font-weight:700;color:#14213d;margin-bottom:6px;">
+        <div style="background:#ffffff;border:1px solid #d8e1ec;border-radius:12px;padding:20px 22px;margin:0 0 18px;">
+          <div style="font-size:12px;color:#5f6b7a;margin-bottom:8px;letter-spacing:0.04em;">TOP {index}</div>
+          <div style="font-size:20px;font-weight:750;color:#14213d;margin-bottom:8px;line-height:1.35;">
             <a href="{html.escape(project['url'])}" style="color:#14213d;text-decoration:none;">{html.escape(project['name'])}</a>
           </div>
-          <div style="font-size:15px;font-weight:700;color:#0f172a;margin-bottom:12px;">{html.escape(project['headline'])}</div>
-          <div style="font-size:14px;color:#243447;line-height:1.7;">
-            <p style="margin:0 0 8px;"><strong>能拿来干嘛：</strong>{html.escape(project['use_case'])}</p>
-            <p style="margin:0 0 8px;"><strong>怎么实现：</strong>{html.escape(project['implementation'])}</p>
-            <p style="margin:0 0 8px;"><strong>谁该看：</strong>{html.escape(project['audience'])}</p>
+          <div style="font-size:15px;font-weight:700;color:#0f172a;margin-bottom:14px;line-height:1.55;">{html.escape(project['headline'])}</div>
+          <div style="font-size:14px;color:#243447;line-height:1.75;">
+            <p style="margin:0 0 8px;"><strong style="display:inline-block;min-width:72px;color:#0f172a;">应用场景</strong>{html.escape(project['use_case'])}</p>
+            <p style="margin:0 0 8px;"><strong style="display:inline-block;min-width:72px;color:#0f172a;">技术路径</strong>{html.escape(project['implementation'])}</p>
+            <p style="margin:0;"><strong style="display:inline-block;min-width:72px;color:#0f172a;">目标读者</strong>{html.escape(project['audience'])}</p>
           </div>
           <div style="margin-top:12px;font-size:13px;color:#5f6b7a;">
             {project['stars']} 星 · {html.escape(project['language'])} · 主题：{html.escape(topic_text)}
@@ -116,8 +116,8 @@ def build_html_body(payload: dict) -> str:
     <html>
       <body style="margin:0;padding:0;background:#f3f6fb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
         <div style="max-width:880px;margin:0 auto;padding:28px 18px 40px;">
-          <div style="background:linear-gradient(135deg,#14213d,#1f4b99);border-radius:20px;padding:28px 28px 24px;color:#ffffff;margin-bottom:20px;">
-            <div style="font-size:30px;font-weight:800;letter-spacing:-0.02em;">GitHub 每周热门项目速读</div>
+          <div style="background:linear-gradient(135deg,#14213d,#1f4b99);border-radius:18px;padding:28px 28px 24px;color:#ffffff;margin-bottom:20px;">
+            <div style="font-size:30px;font-weight:800;">GitHub 每周热门项目速读</div>
             <div style="font-size:14px;opacity:0.92;margin-top:12px;line-height:1.7;">
               统计窗口：近 {days} 天<br>
               项目数量：{project_count}<br>

@@ -13,10 +13,10 @@
       "topics": [],
       "created_at": "2026-05-11T17:44:55Z",
       "updated_at": "2026-05-18T12:54:41Z",
-      "headline": "这是一个在做“This version of OrcaSlicer restores full BambuNetwork support…”的项目。",
-      "use_case": "从 README 看，它更像是给这类需求准备的：This version of OrcaSlicer restores full BambuNetwork support for Bambu Lab printers.",
-      "implementation": "它当前公开的做法是：You are not limited to LAN only.",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "headline": "这是一个桌面切片软件兼容性项目，主要服务于 3D 打印软件与设备生态集成。",
+      "use_case": "用于评估 Bambu Lab 打印机网络连接、远程控制与切片软件生态兼容能力。",
+      "implementation": "通常通过恢复云端/局域网通信适配、设备发现和打印机控制链路来补齐兼容性。",
+      "audience": "面向 3D 打印软件维护者、设备生态集成团队和桌面客户端开发者，用于判断打印机网络能力的复用价值。",
       "term_notes": [
         {
           "term": "RAG",
@@ -33,10 +33,10 @@
       "topics": [],
       "created_at": "2026-05-12T15:54:59Z",
       "updated_at": "2026-05-18T12:53:18Z",
-      "headline": "这是一个在做“YellowKey Bitlocker Bypass Vulnerability”的项目。",
-      "use_case": "你会在这样的场景里需要它：YellowKey Bitlocker Bypass Vulnerability",
-      "implementation": "它当前公开的做法是：Been a while since I saw a bitlocker bypass around, my turn.",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "headline": "这是一个 BitLocker 绕过漏洞研究项目，主要服务于终端安全与磁盘加密攻防。",
+      "use_case": "用于跟进 BitLocker 加密绕过风险、验证攻击前提并评估终端防护影响面。",
+      "implementation": "通常围绕漏洞触发条件、绕过路径和复现实验脚本整理可验证的研究材料。",
+      "audience": "面向安全研究员、终端安全工程师和企业安全响应团队，用于评估磁盘加密绕过风险。",
       "term_notes": [
         {
           "term": "RAG",
@@ -74,10 +74,10 @@
       ],
       "created_at": "2026-05-11T09:40:38Z",
       "updated_at": "2026-05-18T12:55:30Z",
-      "headline": "这是一个在做“The agentic HTML editor — your local AI agent writes the HTML…”的项目。",
-      "use_case": "你会在这样的场景里需要它：The agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 Skills × 9…",
-      "implementation": "它当前公开的做法是：Markdown is the draft. HTML is what humans read. Your local agent writes it.** The agenti…",
-      "audience": "最适合关注它的人：在做 agent-skills、agentic 方向产品判断或技术落地的人。",
+      "headline": "这是一个 AI 设计工作流项目，主要服务于 AI 设计工具与原型生产。",
+      "use_case": "用于搭建从需求描述到界面原型、设计系统和多格式导出的自动化链路。",
+      "implementation": "通过设计代理、模板系统和导出管线把原型生成能力封装成可复用工作流。",
+      "audience": "面向设计工具 PM、前端架构师和设计系统团队，用于评估 AI 设计流程的落地方式。",
       "term_notes": [
         {
           "term": "BYOK",
@@ -102,10 +102,10 @@
       "topics": [],
       "created_at": "2026-05-15T16:55:16Z",
       "updated_at": "2026-05-18T12:55:52Z",
-      "headline": "这是一个在做“The programming language for agents”的项目。",
-      "use_case": "你会在这样的场景里需要它：The programming language for agents",
-      "implementation": "它当前公开的做法是：Zero is experimental and still changing. The compiler, standard library, docs, and exampl…",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "headline": "这是一个 AI 开发工具集成项目，主要服务于 AI 编程工具与开发者工作流。",
+      "use_case": "用于评估 AI 编码能力如何接入现有研发工具、IDE 或自动化开发流程。",
+      "implementation": "通过 SDK、插件或示例工程暴露模型调用、代理编排和上下文管理能力。",
+      "audience": "面向开发者工具 PM、平台工程师和研发效能团队，用于判断 AI 编码能力的集成成本。",
       "term_notes": []
     },
     {
@@ -117,10 +117,10 @@
       "topics": [],
       "created_at": "2026-05-14T19:28:43Z",
       "updated_at": "2026-05-18T11:22:36Z",
-      "headline": "这是一个在做“An Agent Skill for designing cross-platform desktop apps that…”的项目。",
-      "use_case": "你会在这样的场景里需要它：An Agent Skill for designing cross-platform desktop apps that feel native — distilled fro…",
-      "implementation": "它当前公开的做法是：An Agent Skill for designing cross-platform desktop apps that feel native** — distilled f…",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "headline": "这是一个 AI 开发工具集成项目，主要服务于 AI 编程工具与开发者工作流。",
+      "use_case": "用于评估 AI 编码能力如何接入现有研发工具、IDE 或自动化开发流程。",
+      "implementation": "通过 SDK、插件或示例工程暴露模型调用、代理编排和上下文管理能力。",
+      "audience": "面向开发者工具 PM、平台工程师和研发效能团队，用于判断 AI 编码能力的集成成本。",
       "term_notes": []
     },
     {
@@ -132,10 +132,10 @@
       "topics": [],
       "created_at": "2026-05-11T03:07:49Z",
       "updated_at": "2026-05-18T12:38:42Z",
-      "headline": "这是一个在做“ESP32 desk dashboard that shows Claude Code usage”的项目。",
-      "use_case": "你会在这样的场景里需要它：ESP32 desk dashboard that shows Claude Code usage",
-      "implementation": "它当前公开的做法是：It runs on a Waveshare ESP32-S3-Touch-AMOLED-2.16 and pairs with my laptop over Bluetooth…",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "headline": "这是一个 C 生态 的开源项目，主要服务于 C 生态。",
+      "use_case": "用于判断 C 生态 里是否已有可复用的产品方案、技术路径或工程样例。",
+      "implementation": "从仓库形态看，它主要以 C 技术栈沉淀工具、应用或示例代码。",
+      "audience": "面向负责 C 生态 选型的产品负责人、架构师和实现工程师，用于快速评估复用价值与落地成本。",
       "term_notes": []
     },
     {
@@ -150,7 +150,7 @@
       "headline": "这是一个在做“A股全栈数据工具包 — 7层架构 · 28端点 · 13数据源 · 零第三方依赖 | Full-stack China A…”的项目。",
       "use_case": "你会在这样的场景里需要它：A股全栈数据工具包 — 7层架构 · 28端点 · 13数据源 · 零第三方依赖 | Full-stack China A-Share data toolkit for AI c…",
       "implementation": "它当前公开的做法是：一个自包含的 Skill 文件，把分散在 13 个数据源里的 A 股原始数据整合成 AI 编程助手直接能用的工具集。你不用再背 mootdx 的 K 线参数、东财的 PDF Re…",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "audience": "面向开发者工具 PM、平台工程师和研发效能团队，用于判断 AI 编码能力的集成成本。",
       "term_notes": [
         {
           "term": "RAG",
@@ -170,7 +170,7 @@
       "headline": "这是一个在做“全自动 ChatGPT Plus 订阅工具。给定一个 ChatGPT access_token ，本项目会在 **约 20…”的项目。",
       "use_case": "从 README 看，它更像是给这类需求准备的：全自动 ChatGPT Plus 订阅工具。给定一个 ChatGPT access_token ，本项目会在 **约 20 秒** 内通过 Stripe → Midtra…",
       "implementation": "它当前公开的做法是：此项目将不会再进行更新，仅供研究、娱乐、学习，有能力者自行二开。**",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "audience": "面向负责 Python 生态 选型的产品负责人、架构师和实现工程师，用于快速评估复用价值与落地成本。",
       "term_notes": []
     },
     {
@@ -184,8 +184,8 @@
       "updated_at": "2026-05-18T12:52:59Z",
       "headline": "这是一个在做“CVPR 2026 Oral] VGGT Omega”的项目。",
       "use_case": "你会在这样的场景里需要它：CVPR 2026 Oral] VGGT Omega",
-      "implementation": "它当前公开的做法是：1 Visual Geometry Group, University of Oxford**; ** 2 Meta AI**",
-      "audience": "最适合关注它的人：想快速判断这个方向有没有可直接复用实现的 PM 或开发者。",
+      "implementation": "从仓库形态看，它主要以 Python 技术栈沉淀工具、应用或示例代码。",
+      "audience": "面向负责 Python 生态 选型的产品负责人、架构师和实现工程师，用于快速评估复用价值与落地成本。",
       "term_notes": [
         {
           "term": "end-to-end",
@@ -215,10 +215,10 @@
       ],
       "created_at": "2026-05-15T21:32:21Z",
       "updated_at": "2026-05-18T12:56:12Z",
-      "headline": "这是一个在做“Provider-neutral Agent Skill for Codex, Claude Code, and agen…”的项目。",
-      "use_case": "你会在这样的场景里需要它：Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design.",
-      "implementation": "它当前公开的做法是：A provider-neutral Agent Skill for designing, generating MVP blueprints for, auditing, re…",
-      "audience": "最适合关注它的人：在做 agent-skill、agent-skills 方向产品判断或技术落地的人。",
+      "headline": "这是一个 AI 开发工具集成项目，主要服务于 AI 编程工具与开发者工作流。",
+      "use_case": "用于评估 AI 编码能力如何接入现有研发工具、IDE 或自动化开发流程。",
+      "implementation": "通过 SDK、插件或示例工程暴露模型调用、代理编排和上下文管理能力。",
+      "audience": "面向开发者工具 PM、平台工程师和研发效能团队，用于判断 AI 编码能力的集成成本。",
       "term_notes": []
     }
   ]
